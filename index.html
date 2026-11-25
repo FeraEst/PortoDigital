@@ -38,7 +38,10 @@
         @media(max-width:850px){.data-reading{grid-template-columns:1fr}.data-reading-items{grid-template-columns:1fr}.data-reading .data-caveat{grid-column:auto}}
         @media(max-width:850px){.hero h1{font-size:clamp(2.8rem,6.2vw,4.2rem)}}
         .sector-card a{display:inline-block;margin-top:12px;color:#0b756b;font-size:.73rem;font-weight:700;text-decoration:none}.sector-card a:hover{text-decoration:underline}.people-grid figure{margin:0}.people-photo{height:auto;aspect-ratio:3/2}.footer-credit{display:flex;align-items:center;gap:12px;flex-shrink:0}.footer-credit p{margin:0}.footer-logo{width:42px;height:42px;object-fit:contain}
-        @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+        @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}        .kahoot-section{padding:110px 24px;background:linear-gradient(180deg,#e8f4f1 0%,#dfeeed 100%);border-top:1px solid rgba(7,27,43,.06)}.kahoot-card{margin-top:42px;background:#fff;border:1px solid rgba(7,27,43,.08);border-radius:4px;padding:36px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}.kahoot-card p{margin:0;color:#5d6d72;font-size:.92rem;max-width:720px}.kahoot-card strong{display:block;font:600 1.2rem Manrope,sans-serif;color:var(--ink);margin-bottom:8px;letter-spacing:-.03em}.kahoot-actions{display:flex;gap:12px;flex-wrap:wrap}.kahoot-section .button-primary{background:var(--teal);color:var(--ink)}.kahoot-note{margin-top:18px;font-size:.74rem;color:#66777a}
+        @media(max-width:850px){.kahoot-card{grid-template-columns:1fr}}
+        @media(max-width:640px){.kahoot-section{padding:78px 20px}.kahoot-card{padding:24px}}
+
     </style>
 </head>
 <body>
@@ -48,7 +51,7 @@
             <a class="brand" href="#inicio" aria-label="Porto Digital, início"><span class="brand-mark" aria-hidden="true"></span><span>PORTO DIGITAL<span style="color:var(--teal)"> / REC</span></span></a>
             <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">☰</button>
             <div class="nav-links" id="nav-links">
-                <a href="#passado">Passado</a><a href="#presente">Presente</a><a href="#territorio">Território</a><a href="#futuro">Futuro</a><a href="#fontes" class="nav-source">Fontes & dados ↗</a>
+                <a href="#passado">Passado</a><a href="#presente">Presente</a><a href="#territorio">Território</a><a href="#futuro">Futuro</a><a href="#kahoot">Kahoot</a><a href="#fontes" class="nav-source">Fontes & dados ↗</a>
             </div>
         </nav>
     </header>
@@ -199,6 +202,24 @@
                 <p class="method-note"><strong>Limites da pesquisa:</strong> o site institucional do Porto Digital publica o total de empresas, profissionais e faturamento anual, mas a página consultada não declara um ano-base individual. Não foram localizados, nas fontes consultadas, números atuais verificáveis de investimentos anuais, participação de mulheres/diversidade ou repartição de empresas por setor; tais dados não foram preenchidos por estimativa. Para contexto histórico detalhado sobre condições socioeconômicas dos anos 1990, recomenda-se complementar esta versão com estudos acadêmicos e documentos de política pública.</p>
             </div>
         </section>
+
+        <section class="kahoot-section" id="kahoot">
+            <div class="container reveal">
+                <span class="section-kicker">Quiz interativo</span>
+                <h2 class="section-title">Teste o que você aprendeu.</h2>
+                <p class="section-intro">Revise a história, os números e as iniciativas do Porto Digital em um Kahoot rápido. É uma forma leve de fechar a jornada pelo site.</p>
+                <div class="kahoot-card">
+                    <div>
+                        <strong>Kahoot: Porto Digital</strong>
+                        <p>Perguntas sobre origem, território, indicadores, formação e futuro do ecossistema. Abra o quiz, participe no seu ritmo e veja o quanto você absorveu.</p>
+                    </div>
+                    <div class="kahoot-actions">
+                        <a class="button button-primary" href="https://create.kahoot.it/share/porto-digital/eca62cec-9bf9-4d9a-8572-dab3fa1f806b" target="_blank" rel="noreferrer">Abrir Kahoot <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+                <p class="kahoot-note">O Kahoot abre na plataforma Kahoot. Para jogar, pode ser necessário entrar com uma conta ou usar o modo disponibilizado pelo criador do quiz.</p>
+            </div>
+        </section>        </section>
     </main>
     <footer class="footer"><div class="footer-inner"><div class="footer-credit"><p>Made by 3A/EST</p><img class="footer-logo" src="imagens/logodoest-removebg-preview.png" alt="Logo da EST" loading="lazy"></div><p>Uma narrativa sobre cidade, tecnologia e pessoas · Recife, PE</p><p>Conteúdo pesquisado em novembro de 2026 · <a href="https://portodigital.org/" target="_blank" rel="noreferrer">Porto Digital ↗</a></p><a class="back-top" href="#inicio">Voltar ao início ↑</a></div></footer>
 
